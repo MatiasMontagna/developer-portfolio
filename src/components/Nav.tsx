@@ -23,13 +23,13 @@ const NAV_SOCIALS = [
 
 export default function Nav() {
   return (
-    <nav className="flex flex-row justify-between w-screen ">
-      <div className="flex items-center justify-center w-1/4">
+    <nav className="flex flex-row justify-between w-full mt-8">
+      <div className="flex items-center justify-center w-1/4 text-stone-500 dark:text-neutral-400">
         MMC
       </div>
-      <div className="flex flex-row w-3/4 justify-center items-center space-x-10">
+      <div className="flex flex-row w-3/4 justify-center items-center space-x-16 pl-10">
         <div className="flex flex-row justify-center space-x-10">
-          { NAV_OPTIONS.map((option) => <div className="font-medium text-stone-500 dark:text-neutral-400">{option}</div>)}
+          { NAV_OPTIONS.map((option) => <div className="font-medium text-lg text-stone-500 dark:text-neutral-400">{option}</div>)}
         </div>
         <div className="flex flex-row space-x-6">
           {NAV_SOCIALS.map((social) => (
