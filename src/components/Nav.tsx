@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import BurgerMenuIcon from './BurgerMenuIcon';
+
 const NAV_OPTIONS = [
   'Home',
   'About',
@@ -23,14 +25,21 @@ const NAV_SOCIALS = [
 
 export default function Nav() {
   return (
-    <nav className="flex flex-row justify-between w-full mt-8">
+    <nav className="flex flex-row justify-between w-screen md:w-full mt-8">
       <div className="flex items-center justify-center w-1/4 text-stone-500 dark:text-neutral-400">
         MMC
       </div>
-      <div className="flex flex-row w-3/4 justify-center items-center space-x-16 pl-10">
-        <div className="flex flex-row justify-center space-x-10">
-          { NAV_OPTIONS.map((option) => <div className="font-medium text-lg text-stone-500 dark:text-neutral-400">{option}</div>)}
-        </div>
+      <div className="flex justify-end pr-12 md:hidden w-3/4">
+        <button
+          type="button"
+        >
+          <BurgerMenuIcon />
+        </button>
+      </div>
+      <div className="hidden md:flex flex-row w-3/4 justify-center items-center space-x-16 pl-10">
+        <ul className="flex flex-row justify-center space-x-10">
+          { NAV_OPTIONS.map((option) => <li className="font-medium text-lg text-stone-500 dark:text-neutral-400">{option}</li>)}
+        </ul>
         <div className="flex flex-row space-x-6">
           {NAV_SOCIALS.map((social) => (
             <a href={social.url}>
