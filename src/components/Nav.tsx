@@ -38,7 +38,14 @@ export default function Nav() {
       </div>
       <div className="hidden md:flex flex-row w-3/4 justify-center items-center space-x-16 pl-10">
         <ul className="flex flex-row justify-center space-x-10">
-          { NAV_OPTIONS.map((option) => <li className="font-medium text-lg text-stone-500 dark:text-neutral-400">{option}</li>)}
+          { NAV_OPTIONS.map((option) => (
+            <li
+              key={option}
+              className="font-medium text-lg text-stone-500 dark:text-neutral-400"
+            >
+              {option}
+            </li>
+          ))}
         </ul>
         <div className="flex flex-row space-x-6">
           {NAV_SOCIALS.map((social) => (
