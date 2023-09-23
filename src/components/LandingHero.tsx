@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import { DEVELOPER_NAME } from '@/utils/constants';
+
 export default function LandingHero() {
   const textClassNames = 'font-bold text-3xl md:text-6xl text-slate-600 dark:text-zinc-300';
 
@@ -17,7 +19,7 @@ export default function LandingHero() {
       <div className="flex flex-col justify-center md:order-1">
         <p className={textClassNames}>Hi 👋,</p>
         <p className={textClassNames}>My name is</p>
-        <span className="bg-gradient-to-r from-blue-600 to-indigo-400 font-bold inline-block text-transparent bg-clip-text text-3xl md:text-6xl">Matías Montagna</span>
+        <span className="bg-gradient-to-r from-blue-600 to-indigo-400 font-bold inline-block text-transparent bg-clip-text text-3xl md:text-6xl">{DEVELOPER_NAME}</span>
         <p className={textClassNames}>I build digital products</p>
       </div>
     </div>
