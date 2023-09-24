@@ -13,19 +13,19 @@ const TECHNOLOGIES = [
   {
     title: 'TypeScript',
     Icon: TypeScriptLogo,
-    className: '',
+    className: 'text-sky-600 hover:text-sky-300',
     href: 'https://www.typescriptlang.org/',
   },
   {
     title: 'React',
     Icon: ReactLogo,
-    className: '',
+    className: 'text-cyan-400 hover:text-cyan-100',
     href: 'https://react.dev/',
   },
   {
     title: 'Redux',
     Icon: ReduxLogo,
-    className: '',
+    className: 'text-purple-600 hover:text-violet-400',
     href: 'https://redux.js.org/',
   },
   {
@@ -37,25 +37,25 @@ const TECHNOLOGIES = [
   {
     title: 'Ruby on Rails',
     Icon: RailsLogo,
-    className: '',
+    className: 'text-red-600 hover:text-red-300',
     href: 'https://rubyonrails.org/',
   },
   {
     title: 'Tailwind',
     Icon: TailwindLogo,
-    className: '',
+    className: 'text-cyan-500 hover:text-cyan-200',
     href: 'https://tailwindcss.com/',
   },
   {
     title: 'Vue',
     Icon: VueLogo,
-    className: '',
+    className: 'text-emerald-500 hover:text-emerald-200',
     href: 'https://vuejs.org/',
   },
   {
     title: 'Heroku',
     Icon: HerokuIcon,
-    className: '',
+    className: 'text-[#6762a6] hover:text-indigo-300',
     href: 'https://vuejs.org/',
   },
 ];
