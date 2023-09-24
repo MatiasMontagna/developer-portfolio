@@ -7,7 +7,7 @@ export default function LandingHero() {
 
   return (
     <div className="flex flex-col md:flex-row w-screen md:w-full space-y-8 justify-between md:px-10 items-center">
-      <div className="justify-center items-center overflow-hidden rounded-full border-blue-500 border-2 md:border-4 w-1/2 md:w-auto md:order-2">
+      <div className="justify-center items-center overflow-hidden rounded-full border-blue-500 border-2 md:border-4 w-1/2 md:w-auto md:order-2 lg:w-1/3">
         <Image
           src="/images/profile-picture.jpeg"
           alt="Profile picture."
