@@ -8,6 +8,7 @@ import RailsLogo from '@public/icons/rails-icon.svg';
 import TailwindLogo from '@public/icons/tailwind-icon.svg';
 import VueLogo from '@public/icons/vue-icon.svg';
 import HerokuIcon from '@public/icons/heroku-icon.svg';
+import { SUBTITLE_CLASSNAMES, TITLE_CLASSNAMES } from '@/utils/constants';
 
 const TECHNOLOGIES = [
   {
@@ -56,7 +57,7 @@ const TECHNOLOGIES = [
     title: 'Heroku',
     Icon: HerokuIcon,
     className: 'text-[#6762a6] hover:text-indigo-300',
-    href: 'https://vuejs.org/',
+    href: 'https://www.heroku.com/',
   },
 ];
 
@@ -67,6 +68,7 @@ function TechStackIcons() {
         title, Icon, className, href,
       }) => (
         <a
+          key={title}
           title={title}
           target="_blank"
           href={href}
@@ -84,8 +86,8 @@ export default function TechStack() {
   return (
     <div className="flex-col justify-between items-center space-y-14">
       <div className="flex flex-col justify-between items-center h-20 md:h-24">
-        <p className="font-bold text-slate-600 text-3xl md:text-5xl dark:text-zinc-300"> My Tech Stack</p>
-        <p className="text-lg text-stone-500 md:text-2xl dark:text-neutral-400">Technologies I&apos;ve been working with recently</p>
+        <p className={TITLE_CLASSNAMES}> My Tech Stack</p>
+        <p className={SUBTITLE_CLASSNAMES}>Technologies I&apos;ve been working with recently</p>
       </div>
 
       <TechStackIcons />
