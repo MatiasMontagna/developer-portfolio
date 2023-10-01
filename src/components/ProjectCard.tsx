@@ -14,7 +14,7 @@ export default function ProjectCard({
   appStoreHref: string
 }) {
   return (
-    <div className={`flex-row md:flex-col h-44 md:h-96 w-3/4 md:w-56 rounded-xl shadow ${className}`}>
+    <div className={`flex-row md:flex-col h-52 md:h-96 w-3/4 md:w-56 rounded-xl shadow ${className}`}>
       <div className={`h-full w-2/5 md:h-2/5 md:w-full rounded-l-xl md:rounded-tr-xl md:rounded-bl-none items-stretch justify-center ${imageContainerClassNames}`}>
         <Image
           src={imagePath}
@@ -38,10 +38,10 @@ export default function ProjectCard({
             href={appStoreHref}
             title="Download on the App Store"
           >
-            <AppStoreIcon className="text-5xl" />
+            <AppStoreIcon className="text-3xl md:text-5xl" />
           </a>
           <a href={playStoreHref} title="Get it on Google Play">
-            <GooglePlayIcon className="text-5xl" />
+            <GooglePlayIcon className="text-3xl md:text-5xl" />
           </a>
         </div>
       </div>
