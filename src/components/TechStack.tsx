@@ -85,7 +85,7 @@ function TechStackIcons() {
 export default function TechStack() {
   return (
     <div className="flex-col justify-between items-center space-y-14">
-      <div className="flex flex-col justify-between items-center h-20 md:h-24">
+      <div className="flex flex-col justify-between items-center h-20 md:h-24 w-screen">
         <p className={TITLE_CLASSNAMES}> My Tech Stack</p>
         <p className={SUBTITLE_CLASSNAMES}>Technologies I&apos;ve been working with recently</p>
       </div>
