@@ -35,7 +35,7 @@ export default function Projects() {
     <div className="flex-col space-y-10 w-screen items-center" id="projects">
       <div className="flex-col justify-between items-center  h-20 md:h-24">
         <p className={TITLE_CLASSNAMES}>Projects</p>
-        <p className={SUBTITLE_CLASSNAMES}>Things I&apos;ve worked on so far</p>
+        <p className={SUBTITLE_CLASSNAMES}>Professional projects I&apos;ve been involved in</p>
       </div>
       <div className="flex-col md:flex-row flex-wrap items-center">
         {PROJECTS_DATA.map(({
