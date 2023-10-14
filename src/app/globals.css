@@ -16,6 +16,10 @@
   }
 }
 
+.bg-primary-light {
+  background-color: rgb(214, 219, 220);
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
