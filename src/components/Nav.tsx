@@ -7,11 +7,11 @@ import Image from 'next/image';
 import BurgerMenuIcon from './BurgerMenuIcon';
 
 const NAV_OPTIONS = [
-  'Home',
-  'About',
-  'Tech Stack',
-  'Projects',
-  'Contact',
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '#about' },
+  { name: 'Tech Stack', href: '#tech-stack' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 const NAV_SOCIALS = [
@@ -34,7 +34,7 @@ export default function Nav() {
   const toggleNav = () => setisNavVisible(!isNavVisible);
 
   return (
-    <nav className="flex relative flex-row bg-white dark:bg-black justify-between w-screen md:w-full mt-8">
+    <nav className="flex relative flex-row bg-primary-light dark:bg-black justify-between w-screen md:w-full mt-8">
       <div className="flex items-center justify-center w-1/4 text-stone-500 dark:text-neutral-400">
         MMC
       </div>
@@ -48,12 +48,12 @@ export default function Nav() {
       </div>
       <div className={`${isNavVisible ? 'flex' : 'hidden'} md:flex transition-all md:transition-none duration-700 ease-in bg-inherit flex-column md:flex-row md:w-3/4 justify-center items-center md:space-x-16 md:pl-10`}>
         <ul className="flex top-9 right-0 h-[80vh]  md:h-auto  absolute md:static w-1/2 md:w-auto bg-inherit flex-col md:flex-row md:justify-center space-y-10 md:space-x-10 md:space-y-0">
-          { NAV_OPTIONS.map((option) => (
+          { NAV_OPTIONS.map(({ name, href }) => (
             <li
-              key={option}
-              className="font-medium text-lg text-stone-500 dark:text-neutral-400 pl-7 md:pl-0"
+              key={name}
+              className="font-medium text-lg text-stone-500 dark:text-neutral-400 pl-7 md:pl-0 hover:text-stone-300 dark:hover:text-neutral-200"
             >
-              {option}
+              <a href={href} onClick={() => setisNavVisible(false)}>{name}</a>
             </li>
           ))}
           {NAV_SOCIALS.map((social) => (
