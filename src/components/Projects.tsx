@@ -32,7 +32,7 @@ const PROJECTS_DATA = [
 
 export default function Projects() {
   return (
-    <div className="flex-col space-y-10 w-screen items-center">
+    <div className="flex-col space-y-10 w-screen items-center" id="projects">
       <div className="flex-col justify-between items-center  h-20 md:h-24">
         <p className={TITLE_CLASSNAMES}>Projects</p>
         <p className={SUBTITLE_CLASSNAMES}>Things I&apos;ve worked on so far</p>

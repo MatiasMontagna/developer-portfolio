@@ -6,7 +6,7 @@ export default function LandingHero() {
   const textClassNames = 'font-bold text-3xl md:text-6xl text-slate-600 dark:text-zinc-300';
 
   return (
-    <div className="flex flex-col md:flex-row w-screen md:w-full space-y-8 justify-between md:px-10 items-center">
+    <div id="about" className="flex flex-col md:flex-row w-screen md:w-full space-y-8 justify-between md:px-10 items-center">
       <div className="justify-center items-center overflow-hidden rounded-full border-blue-500 border-2 md:border-4 w-1/2 md:w-auto md:order-2 lg:w-1/3">
         <Image
           src="/images/profile-picture.jpeg"
