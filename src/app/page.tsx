@@ -2,6 +2,7 @@ import Nav from '@/components/Nav';
 import LandingHero from '@/components/LandingHero';
 import TechStack from '@/components/TechStack';
 import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <LandingHero />
       <TechStack />
       <Projects />
+      <Contact />
     </main>
   );
 }
