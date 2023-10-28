@@ -35,7 +35,7 @@ export default function Nav() {
 
   return (
     <nav className="flex relative flex-row bg-primary-light dark:bg-black justify-between w-screen md:w-full mt-8">
-      <div className="flex items-center justify-center w-1/4 text-stone-500 dark:text-neutral-400">
+      <div className="flex invisible items-center justify-center w-1/4 text-stone-500 dark:text-neutral-400">
         MMC
       </div>
       <div className="flex justify-end pr-8 md:hidden w-3/4">
